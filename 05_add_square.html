@@ -66,9 +66,7 @@
       100% {
         width: 100px;
         height: 100px;
-        /* transform: rotate(360deg); */
       }
-
     }
   </style>
 </head>
@@ -79,7 +77,10 @@
 
   <br>
 
+
   <script>
+
+    //Javascript
     const buttonJS = document.querySelector('.js');
 
     function createDiv1() {
@@ -90,20 +91,25 @@
       document.body.appendChild(divItem);
     }
     buttonJS.addEventListener("click", createDiv1)
-
-    const buttonJQ = document.querySelector('.jq');
-
-    function createDiv2() {
-      const divItem = document.createElement('div');
-      divItem.classList.add("box2"); //add one class
-      // divItem.className = "box"; add one class or replace, used to reset clasess:
-      // divItem.setAttribute("class", "box"); add class by:
-      document.body.appendChild(divItem);
-    }
-    buttonJQ.addEventListener("click", createDiv2)
   </script>
 
 
+
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+  <script>
+    //jQuery
+    $('.jq').on('click', function () {
+      $('body').append('<div class="box2">')
+    })
+
+  </script>
+
+
+
+  </script>
 </body>
 
 </html>
