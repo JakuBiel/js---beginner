@@ -14,10 +14,10 @@ const mLeft = 0
 //2. function
 
 function move() {
-  aside.style.left = mLeft;
-  console.log("dziala");
+  aside.classList.toggle('move')
   bars.classList.toggle('show')
   iconX.classList.toggle('show')
+
 }
 
 //3. listener
