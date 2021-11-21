@@ -21,9 +21,7 @@ body {
   /* border:2px #aaa solid; */
 }
 
-.move {
-  left: 0;
-}
+
 
 .burger:hover {
   cursor: pointer;
@@ -31,13 +29,11 @@ body {
 
 .fas {
   color: #aaa;
-  opacity: 0;
   display: none;
   transition: 1s linear;
 }
 
-.show {
-  opacity: 1;
+.fas.show {
   display: block;
 }
 
@@ -49,4 +45,8 @@ aside {
   top:0;
   left: -300px;
   transition: .5s linear;
+}
+
+aside.show {
+  left: 0;
 }
