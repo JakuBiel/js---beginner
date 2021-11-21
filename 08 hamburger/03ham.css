@@ -9,6 +9,15 @@ body {
   display: flex;
 }
 
+nav {
+  font-family:  Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
+}
+
 .burger {
   position:absolute;
   width: 50px;
@@ -20,7 +29,6 @@ body {
   transition: .1s linear;
   /* border:2px #aaa solid; */
 }
-
 
 
 .burger:hover {
