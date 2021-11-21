@@ -5,8 +5,17 @@
 }
 
 body {
-  max-width: 1000px;
+  /* max-width: 1000px; */
   display: flex;
+  font-family:  Arial, sans-serif;
+}
+
+nav {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
 }
 
 .burger {

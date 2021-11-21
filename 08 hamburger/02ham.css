@@ -5,8 +5,17 @@
 }
 
 body {
-  max-width: 1000px;
+  /* max-width: 1000px; */
   display: flex;
+  font-family:  Arial, sans-serif;
+}
+
+nav {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
 }
 
 .burger {
@@ -43,7 +52,11 @@ aside {
   transition: .5s linear;
 }
 
-aside.active {
+/* aside.active {
+  left: 0;
+} */
+
+.burger.active + aside {
   left: 0;
 }
 

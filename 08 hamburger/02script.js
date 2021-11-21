@@ -13,7 +13,7 @@ function active() {
   console.log("dziala");
   // btn.style.transform = 'rotate(135deg)';
   btn.classList.toggle('active')
-  aside.classList.toggle('active')
+  // aside.classList.toggle('active')
 }
 
 //3. listenerss
