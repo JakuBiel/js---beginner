@@ -5,28 +5,28 @@
 }
 
 body {
-  max-width: 1000px;
+  /* max-width: 1000px; */
   display: flex;
+  font-family:  Arial, sans-serif;
 }
 
 nav {
-  font-family:  Arial, sans-serif;
+  
   font-size: 2rem;
   font-weight: bold;
   color: white;
   text-align: center;
-  margin-top: 2rem;
-  width: 300px;
+  margin-top: 1rem;
 }
 
 .burger {
   position:absolute;
-  width: 50px;
-  height: 50px;
-  font-size: 46px;
+  width: 2rem;
+  height: 2rem;
+  font-size: 2rem;
   text-align: center;
-  top: 20px;
-  right: 50px;
+  top: 1rem;
+  right: 25px;
   transition: .1s linear;
   /* border:2px #aaa solid; */
 }
@@ -58,4 +58,19 @@ aside {
 
 aside.show {
   left: 0;
+}
+
+.wrapper {
+  position: absolute;
+  max-width: calc(100vw - 100px);
+  padding: 1rem 2rem;
+  /* border: 1px solid black; */
+  transition: .5s linear;
+  right: 100px;
+  color: #888;
+}
+
+.wrapper.show {
+  max-width: calc(100vw - 400px);
+  
 }
