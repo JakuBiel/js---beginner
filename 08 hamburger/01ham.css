@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1000px;
+  display: flex;
+}
+
+.burger {
+  position:absolute;
+  width: 30px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 50%;
+  line-height: 26px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 800;
+  top: 20px;
+  right: 50px;
+  transition: .1s linear;
+}
+
+.burger:hover {
+  transform: rotate(calc(5 * 45deg));
+  cursor: pointer;
+}
+
+aside {
+  position: absolute;
+  background: #aaa;
+  width: 300px;
+  height: 100vh;
+  top:0;
+  left: -300px;
+  transition: .5s linear;
+}
+
+.burger:hover+aside {
+  left: 0;
+}
