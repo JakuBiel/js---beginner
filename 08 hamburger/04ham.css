@@ -6,8 +6,9 @@
 
 body {
   /* max-width: 1000px; */
-  display: flex;
+  /* display: flex; */
   font-family:  Arial, sans-serif;
+  
 }
 
 nav {
@@ -16,10 +17,12 @@ nav {
   color: white;
   text-align: center;
   margin-top: 1rem;
+  height: 50%;
+  background: red;
 }
 
 .burger {
-  position:absolute;
+  position:fixed;
   width: 2rem;
   height: 2rem;
   font-size: 2rem;
@@ -46,11 +49,11 @@ nav {
 }
 
 aside {
-  position: absolute;
+  position: fixed;
   background: #aaa;
   width: 300px;
-  height: 100vh;
   top:0;
+  bottom:0;
   left: -300px;
   transition: .5s linear;
 }
@@ -68,6 +71,11 @@ aside.show {
   right: 4rem;
   left: 0;
   color: #888;
+}
+
+p{
+font-size: 3rem;;
+
 }
 
 .wrapper.show {
