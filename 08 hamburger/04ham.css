@@ -26,7 +26,7 @@ nav {
   font-size: 2rem;
   text-align: center;
   top: 1rem;
-  right: 25px;
+  right: 1rem;
   transition: .1s linear;
   /* border:2px #aaa solid; */
 }
@@ -62,15 +62,16 @@ aside.show {
 
 .wrapper {
   position: absolute;
-  max-width: calc(100vw - 100px);
+  /* max-width: calc(100vw - 1rem); */
   padding: 1rem 2rem;
   /* border: 1px solid black; */
   transition: .5s linear;
-  right: 100px;
+  right: 4rem;
+  left: 0;
   color: #888;
 }
 
 .wrapper.show {
-  max-width: calc(100vw - 400px);
-  
+  /* max-width: calc(100vw - 300px - 4rem); */
+  left: 300px;
 }
